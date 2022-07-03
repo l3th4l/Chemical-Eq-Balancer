@@ -11,5 +11,4 @@ or
 eg:
 
 ``Enter your equation :
-
 Fe + H_2O -> Fe_3O_4 + H_2``
