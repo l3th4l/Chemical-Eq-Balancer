@@ -1,6 +1,7 @@
 # Chemical-Eq-Balancer
 
 input the equation in the form :
+
 `<element>_count<element> + <element> -> <element>_count<element>`
 
 or 
