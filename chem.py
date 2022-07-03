@@ -5,7 +5,7 @@ import re
 
 #eq = 'Fe + H_2O -> Fe_3O_4 + H_2'
 
-eq = input()
+eq = input("Enter your equation : \n")
 
 eql = [x for x in eq.split(' ') if x[0].isalpha()]
 
@@ -43,6 +43,8 @@ l = lcm(denom_list) # gets lcm of denominators of coefficients
 for coef in coefs[0][:,-2]:
     coefl.append(np.abs(coef*l)) #multiplies the absolute value of the coefficient with the lcm
 coefl.append(l) #adds the free variable * lcm to the coefficient list
+
+print("\nBalenced Molecules : \n")
 
 for mols in list(zip(coefl,eql)):
     print(('%s%s'%(mols[0], mols[1])).replace('1', ''))
